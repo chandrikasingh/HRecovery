@@ -1,0 +1,295 @@
+```css
+/* =========================================================
+   Global
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================================================
+   Header / Top Section
+   ========================================================= */
+
+.top {
+    background: linear-gradient(180deg, #1976d2, #0d63c8);
+    color: #fff;
+    padding: 18px 18px 24px;
+    border-radius: 0 0 26px 26px;
+    box-shadow: 0 5px 18px #0002;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 15px;
+    background: #fff3;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 28px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sub {
+    opacity: 0.85;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   Statistics
+   ========================================================= */
+
+.stats {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.stat {
+    flex: 1;
+    background: #ffffff18;
+    border: 1px solid #ffffff25;
+    border-radius: 16px;
+    padding: 11px;
+}
+
+.stat b {
+    display: block;
+    font-size: 20px;
+}
+
+.stat span {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   Main Container
+   ========================================================= */
+
+.wrap {
+    padding: 16px;
+    max-width: 720px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 16px #1d35571a;
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   Search
+   ========================================================= */
+
+.searchrow {
+    display: flex;
+    gap: 9px;
+}
+
+.searchrow input {
+    flex: 1;
+    border: 2px solid #d8e0ec;
+    border-radius: 13px;
+    padding: 14px;
+    outline: none;
+    min-width: 0;
+}
+
+.searchrow input:focus {
+    border-color: #1976d2;
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.btn {
+    border: 0;
+    border-radius: 13px;
+    padding: 0 16px;
+    background: #1976d2;
+    color: #fff;
+    font-weight: 700;
+}
+
+.secondary {
+    background: #e9f2ff;
+    color: #1261b5;
+}
+
+.back {
+    border: 0;
+    background: none;
+    color: #1261b5;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 9px;
+    margin-top: 12px;
+}
+
+.actions button {
+    height: 44px;
+}
+
+
+/* =========================================================
+   Search Hint
+   ========================================================= */
+
+.hint {
+    font-size: 12px;
+    color: #718096;
+    margin-top: 9px;
+}
+
+
+/* =========================================================
+   Results
+   ========================================================= */
+
+.results {
+    display: grid;
+    gap: 10px;
+}
+
+.result {
+    border: 1px solid #e5eaf2;
+    border-radius: 15px;
+    padding: 13px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.result:hover {
+    border-color: #1976d2;
+}
+
+.reg {
+    font-weight: 800;
+    color: #1261b5;
+    font-size: 17px;
+}
+
+.meta {
+    font-size: 12px;
+    color: #687386;
+    margin-top: 5px;
+}
+
+.empty {
+    text-align: center;
+    color: #758196;
+    padding: 24px 10px;
+}
+
+
+/* =========================================================
+   Detail Section
+   ========================================================= */
+
+.detail h2 {
+    margin: 0 0 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.label {
+    color: #778399;
+    font-size: 12px;
+}
+
+.value {
+    text-align: right;
+    font-weight: 700;
+    max-width: 60%;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    text-align: center;
+    color: #8a94a6;
+    font-size: 11px;
+    padding: 15px;
+}
+
+
+/* =========================================================
+   File Input
+   ========================================================= */
+
+.file {
+    display: none;
+}
+
+
+/* =========================================================
+   Toast
+   ========================================================= */
+
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    background: #172033;
+    color: #fff;
+
+    padding: 12px 16px;
+    border-radius: 12px;
+
+    display: none;
+    z-index: 5;
+}
+

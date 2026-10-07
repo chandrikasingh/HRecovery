@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <meta name="theme-color" content="#1976d2" />
+    <title>Ajith Behera Agency</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/logIn_style.css" />
+</head>
+
+<body>
+
+<!-- =====================================================
+     LOGIN SCREEN
+====================================================== -->
+
+<div id="loginScreen">
+
+    <div class="login-box">
+
+        <div class="login-icon">🚗</div>
+
+        <h1>
+            Ajith Behera Agency
+        </h1>
+
+        <p class="login-subtitle">
+            Vehicle Recovery Login
+        </p>
+
+        <!-- Email   placeholder="Email" -->
+        <input
+                id="loginEmail"
+                type="email"
+                value="admin@agency.com"
+                autocomplete="email" >
+
+
+        <!-- Password -->
+        <div class="password-wrapper">
+
+            <input
+                    id="loginPassword"
+                    type="password"
+                    placeholder="Password"
+                    autocomplete="current-password" />
+
+            <button
+                    type="button"
+                    class="password-toggle"
+                    onclick="togglePassword()"
+                    aria-label="Show password">
+
+                Show
+            </button>
+
+        </div>
+
+        <!-- Login Button -->
+        <button
+                type="button"
+                class="login-button"
+                onclick="agencyLogin()">
+
+            LOGIN
+        </button>
+
+        <!-- Error -->
+        <p id="loginError">
+            Wrong email or password
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- JavaScript -->
+<script src="js/login_main.js"></script>
+
+</body>
+
+</html>
